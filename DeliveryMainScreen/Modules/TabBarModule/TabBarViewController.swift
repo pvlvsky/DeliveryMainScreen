@@ -13,6 +13,9 @@ final class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         setup()
     }
+}
+    
+extension TabBarViewController: TabBarViewControllerProtocol {
     
     func setup() {
         let attributedFontNormal: UIFont = UIFont(name: "SFUIDisplay-Regular", size: 13) ?? .systemFont(ofSize: 13)

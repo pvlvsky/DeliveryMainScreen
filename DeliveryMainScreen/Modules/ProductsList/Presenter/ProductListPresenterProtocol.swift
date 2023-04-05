@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol ProductListPresenterProtocol: AnyObject { }
+protocol ProductListPresenterProtocol: AnyObject {
+    func viewDidLoaded()
+}

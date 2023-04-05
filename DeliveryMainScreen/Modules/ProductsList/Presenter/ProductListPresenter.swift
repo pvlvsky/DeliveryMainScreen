@@ -19,5 +19,7 @@ class ProductListPresenter {
 }
 
 extension ProductListPresenter: ProductListPresenterProtocol {
-    
+    func viewDidLoaded() {
+        //Start loading info
+    }
 }

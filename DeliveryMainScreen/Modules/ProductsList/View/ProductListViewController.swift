@@ -13,7 +13,7 @@ class ProductListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter?.viewDidLoaded()
         
     }
 }

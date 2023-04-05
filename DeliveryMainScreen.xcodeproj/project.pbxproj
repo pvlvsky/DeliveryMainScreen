@@ -29,6 +29,10 @@
 		382E286929DCFA6100445FB5 /* SFUIDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382E286529DCFA6000445FB5 /* SFUIDisplay-Bold.ttf */; };
 		382E286A29DCFA6100445FB5 /* SFUIDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382E286629DCFA6100445FB5 /* SFUIDisplay-Medium.ttf */; };
 		382E286B29DCFA6100445FB5 /* SFUIDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382E286729DCFA6100445FB5 /* SFUIDisplay-Regular.ttf */; };
+		382E286D29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E286C29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift */; };
+		382E287029DD015B00445FB5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E286F29DD015B00445FB5 /* NetworkService.swift */; };
+		382E287329DD017500445FB5 /* CacheImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287229DD017500445FB5 /* CacheImageService.swift */; };
+		382E287529DD32D600445FB5 /* ProductListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287429DD32D600445FB5 /* ProductListEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		382E286529DCFA6000445FB5 /* SFUIDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		382E286629DCFA6100445FB5 /* SFUIDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		382E286729DCFA6100445FB5 /* SFUIDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		382E286C29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerProtocol.swift; sourceTree = "<group>"; };
+		382E286F29DD015B00445FB5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		382E287229DD017500445FB5 /* CacheImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageService.swift; sourceTree = "<group>"; };
+		382E287429DD32D600445FB5 /* ProductListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 		382E281229DC1D6B00445FB5 /* DeliveryMainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				382E286E29DD014400445FB5 /* Services */,
 				382E282D29DC4CCD00445FB5 /* Application */,
 				382E285229DCF37000445FB5 /* Helpers */,
 				382E286229DCF7EB00445FB5 /* Modules */,
@@ -139,6 +148,7 @@
 		382E282B29DC4C2300445FB5 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				382E287429DD32D600445FB5 /* ProductListEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -231,8 +241,18 @@
 			isa = PBXGroup;
 			children = (
 				382E285529DCF3B200445FB5 /* TabBarViewController.swift */,
+				382E286C29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift */,
 			);
 			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		382E286E29DD014400445FB5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				382E286F29DD015B00445FB5 /* NetworkService.swift */,
+				382E287229DD017500445FB5 /* CacheImageService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,15 +333,19 @@
 				382E283D29DC534C00445FB5 /* ProductListRouter.swift in Sources */,
 				382E286129DCF5A700445FB5 /* ProductListModulBuilder.swift in Sources */,
 				382E285F29DCF4C700445FB5 /* ContactViewController.swift in Sources */,
+				382E287029DD015B00445FB5 /* NetworkService.swift in Sources */,
 				382E284029DC53F800445FB5 /* ProductListInteractorProtocol.swift in Sources */,
 				382E283829DC517100445FB5 /* ProductListPresenterProtocol.swift in Sources */,
 				382E285629DCF3B200445FB5 /* TabBarViewController.swift in Sources */,
+				382E287529DD32D600445FB5 /* ProductListEntity.swift in Sources */,
 				382E285D29DCF4B500445FB5 /* ProfileViewController.swift in Sources */,
+				382E287329DD017500445FB5 /* CacheImageService.swift in Sources */,
 				382E283B29DC52F500445FB5 /* ProductListRouterProtocol.swift in Sources */,
 				382E284229DC544900445FB5 /* ProductListInteractor.swift in Sources */,
 				382E281429DC1D6B00445FB5 /* AppDelegate.swift in Sources */,
 				382E283029DC504100445FB5 /* ProductListViewController.swift in Sources */,
 				382E284829DC942D00445FB5 /* AppAssembly.swift in Sources */,
+				382E286D29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift in Sources */,
 				382E285429DCF38300445FB5 /* UIColor+Extension.swift in Sources */,
 				382E283529DC514900445FB5 /* ProductListPresenter.swift in Sources */,
 				382E283329DC507700445FB5 /* ProductListViewControllerProtocol.swift in Sources */,
