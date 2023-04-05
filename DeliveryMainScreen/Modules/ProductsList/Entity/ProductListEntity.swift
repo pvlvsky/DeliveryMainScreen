@@ -8,7 +8,11 @@
 import Foundation
 
 struct ProductListEntity: Codable {
-    var food: [Food]
+    var food: [Food]?
+    
+    init(food: [Food]? = []) {
+        self.food = food
+    }
 }
 
 struct Food: Codable {

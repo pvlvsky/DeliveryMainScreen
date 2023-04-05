@@ -12,14 +12,23 @@ class ProductListPresenter {
     var router: ProductListRouterProtocol
     var interactor: ProductListInteractorProtocol
     
+    var foods: ProductListEntity?
+    var categories: [String]?
+    
     init(router: ProductListRouterProtocol, interactor: ProductListInteractorProtocol) {
         self.router = router
         self.interactor = interactor
     }
+    
 }
 
 extension ProductListPresenter: ProductListPresenterProtocol {
+    
+    func setFoods(entity: ProductListEntity) {
+        self.foods = entity
+    }
+    
     func viewDidLoaded() {
-        //Start loading info
+        self.interactor.loadFood()
     }
 }

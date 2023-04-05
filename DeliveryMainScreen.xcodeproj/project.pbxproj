@@ -31,8 +31,13 @@
 		382E286B29DCFA6100445FB5 /* SFUIDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382E286729DCFA6100445FB5 /* SFUIDisplay-Regular.ttf */; };
 		382E286D29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E286C29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift */; };
 		382E287029DD015B00445FB5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E286F29DD015B00445FB5 /* NetworkService.swift */; };
-		382E287329DD017500445FB5 /* CacheImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287229DD017500445FB5 /* CacheImageService.swift */; };
+		382E287329DD017500445FB5 /* CacheImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287229DD017500445FB5 /* CacheImageDataService.swift */; };
 		382E287529DD32D600445FB5 /* ProductListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287429DD32D600445FB5 /* ProductListEntity.swift */; };
+		382E287829DD545300445FB5 /* CostCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287729DD545300445FB5 /* CostCustomButton.swift */; };
+		382E287B29DD553300445FB5 /* BannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287A29DD553300445FB5 /* BannerScrollView.swift */; };
+		382E287D29DD560100445FB5 /* FoodCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287C29DD560100445FB5 /* FoodCustomImageView.swift */; };
+		382E287F29DD580100445FB5 /* CategoriesCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E287E29DD580100445FB5 /* CategoriesCustomButton.swift */; };
+		382E288129DD59AE00445FB5 /* CategoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E288029DD59AE00445FB5 /* CategoriesScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +67,13 @@
 		382E286729DCFA6100445FB5 /* SFUIDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		382E286C29DCFE4800445FB5 /* TabBarViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerProtocol.swift; sourceTree = "<group>"; };
 		382E286F29DD015B00445FB5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		382E287229DD017500445FB5 /* CacheImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageService.swift; sourceTree = "<group>"; };
+		382E287229DD017500445FB5 /* CacheImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageDataService.swift; sourceTree = "<group>"; };
 		382E287429DD32D600445FB5 /* ProductListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListEntity.swift; sourceTree = "<group>"; };
+		382E287729DD545300445FB5 /* CostCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCustomButton.swift; sourceTree = "<group>"; };
+		382E287A29DD553300445FB5 /* BannerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerScrollView.swift; sourceTree = "<group>"; };
+		382E287C29DD560100445FB5 /* FoodCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCustomImageView.swift; sourceTree = "<group>"; };
+		382E287E29DD580100445FB5 /* CategoriesCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCustomButton.swift; sourceTree = "<group>"; };
+		382E288029DD59AE00445FB5 /* CategoriesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 		382E282829DC4C0100445FB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				382E287629DD53EC00445FB5 /* VeiwComponents */,
 				382E282F29DC504100445FB5 /* ProductListViewController.swift */,
 				382E283229DC507700445FB5 /* ProductListViewControllerProtocol.swift */,
 			);
@@ -250,9 +261,21 @@
 			isa = PBXGroup;
 			children = (
 				382E286F29DD015B00445FB5 /* NetworkService.swift */,
-				382E287229DD017500445FB5 /* CacheImageService.swift */,
+				382E287229DD017500445FB5 /* CacheImageDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		382E287629DD53EC00445FB5 /* VeiwComponents */ = {
+			isa = PBXGroup;
+			children = (
+				382E287729DD545300445FB5 /* CostCustomButton.swift */,
+				382E287A29DD553300445FB5 /* BannerScrollView.swift */,
+				382E287C29DD560100445FB5 /* FoodCustomImageView.swift */,
+				382E287E29DD580100445FB5 /* CategoriesCustomButton.swift */,
+				382E288029DD59AE00445FB5 /* CategoriesScrollView.swift */,
+			);
+			path = VeiwComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,17 +352,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382E288129DD59AE00445FB5 /* CategoriesScrollView.swift in Sources */,
 				382E285B29DCF4A800445FB5 /* BasketViewController.swift in Sources */,
 				382E283D29DC534C00445FB5 /* ProductListRouter.swift in Sources */,
 				382E286129DCF5A700445FB5 /* ProductListModulBuilder.swift in Sources */,
 				382E285F29DCF4C700445FB5 /* ContactViewController.swift in Sources */,
+				382E287F29DD580100445FB5 /* CategoriesCustomButton.swift in Sources */,
 				382E287029DD015B00445FB5 /* NetworkService.swift in Sources */,
 				382E284029DC53F800445FB5 /* ProductListInteractorProtocol.swift in Sources */,
 				382E283829DC517100445FB5 /* ProductListPresenterProtocol.swift in Sources */,
+				382E287D29DD560100445FB5 /* FoodCustomImageView.swift in Sources */,
+				382E287829DD545300445FB5 /* CostCustomButton.swift in Sources */,
+				382E287B29DD553300445FB5 /* BannerScrollView.swift in Sources */,
 				382E285629DCF3B200445FB5 /* TabBarViewController.swift in Sources */,
 				382E287529DD32D600445FB5 /* ProductListEntity.swift in Sources */,
 				382E285D29DCF4B500445FB5 /* ProfileViewController.swift in Sources */,
-				382E287329DD017500445FB5 /* CacheImageService.swift in Sources */,
+				382E287329DD017500445FB5 /* CacheImageDataService.swift in Sources */,
 				382E283B29DC52F500445FB5 /* ProductListRouterProtocol.swift in Sources */,
 				382E284229DC544900445FB5 /* ProductListInteractor.swift in Sources */,
 				382E281429DC1D6B00445FB5 /* AppDelegate.swift in Sources */,

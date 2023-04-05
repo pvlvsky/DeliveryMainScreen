@@ -9,4 +9,5 @@ import Foundation
 
 protocol ProductListPresenterProtocol: AnyObject {
     func viewDidLoaded()
+    func setFoods(entity: ProductListEntity)
 }
